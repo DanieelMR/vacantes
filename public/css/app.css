@@ -1,0 +1,329 @@
+/*
+|--------------------------------------------------------------------------
+| Portal de Vacantes - Estilos Personalizados
+|--------------------------------------------------------------------------
+| Instituto Tecnológico de Cuautla - TecNM
+| Colores basados en la identidad institucional
+*/
+
+:root {
+    --primary-blue: #2c5282;
+    --secondary-blue: #2a4365;
+    --accent-blue: #3182ce;
+    --light-blue: #bee3f8;
+    --text-dark: #1a202c;
+    --text-light: #4a5568;
+    --bg-light: #f7fafc;
+    --white: #ffffff;
+    --success-green: #38a169;
+    --warning-yellow: #d69e2e;
+    --danger-red: #e53e3e;
+}
+
+/* Elementos base */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Headers y títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.text-primary {
+    color: var(--primary-blue) !important;
+}
+
+/* Botones personalizados */
+.btn-primary {
+    background-color: var(--accent-blue);
+    border-color: var(--accent-blue);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--secondary-blue);
+    border-color: var(--secondary-blue);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(44, 82, 130, 0.3);
+}
+
+.btn-success {
+    background-color: var(--success-green);
+    border-color: var(--success-green);
+    font-weight: 500;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.card-header {
+    background-color: var(--white);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-radius: 12px 12px 0 0 !important;
+    font-weight: 600;
+}
+
+/* Vacante cards específicos */
+.vacante-card {
+    border-left: 4px solid var(--accent-blue);
+    transition: all 0.3s ease;
+}
+
+.vacante-card:hover {
+    border-left-color: var(--primary-blue);
+    box-shadow: 0 6px 20px rgba(44, 82, 130, 0.2);
+}
+
+/* Badges personalizados */
+.badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+}
+
+.badge-servicio {
+    background-color: var(--success-green);
+    color: white;
+}
+
+.badge-residencia {
+    background-color: var(--accent-blue);
+    color: white;
+}
+
+/* Navbar personalizada */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Header gradient */
+.header-gradient {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    color: white;
+    padding: 3rem 0;
+    position: relative;
+}
+
+.header-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    pointer-events: none;
+}
+
+/* Footer personalizado */
+.footer {
+    background-color: var(--secondary-blue);
+    color: white;
+    margin-top: 4rem;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+/* Formularios */
+.form-control:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 0.2rem rgba(49, 130, 206, 0.25);
+}
+
+.form-select:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 0.2rem rgba(49, 130, 206, 0.25);
+}
+
+/* Tables */
+.table > :not(caption) > * > * {
+    border-bottom-width: 1px;
+    border-color: rgba(0,0,0,0.1);
+}
+
+.table-hover > tbody > tr:hover > * {
+    background-color: rgba(49, 130, 206, 0.05);
+}
+
+/* Logo placeholders */
+.logo-placeholder {
+    background: rgba(255,255,255,0.1);
+    border: 2px dashed rgba(255,255,255,0.3);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.logo-placeholder:hover {
+    background: rgba(255,255,255,0.15);
+    border-color: rgba(255,255,255,0.5);
+}
+
+/* Stats cards */
+.stats-card {
+    background: linear-gradient(135deg, var(--accent-blue), var(--primary-blue));
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.stats-card .card-body {
+    position: relative;
+}
+
+.stats-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Filter section */
+.filter-section {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Alerts personalizadas */
+.alert {
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.alert-success {
+    background-color: rgba(56, 161, 105, 0.1);
+    color: #22543d;
+    border-left: 4px solid var(--success-green);
+}
+
+.alert-info {
+    background-color: rgba(49, 130, 206, 0.1);
+    color: var(--primary-blue);
+    border-left: 4px solid var(--accent-blue);
+}
+
+.alert-warning {
+    background-color: rgba(214, 158, 46, 0.1);
+    color: #744210;
+    border-left: 4px solid var(--warning-yellow);
+}
+
+.alert-danger {
+    background-color: rgba(229, 62, 62, 0.1);
+    color: #742a2a;
+    border-left: 4px solid var(--danger-red);
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+    .header-gradient {
+        padding: 2rem 0;
+    }
+    
+    .header-gradient h1 {
+        font-size: 1.8rem;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    .btn-group-sm .btn {
+        padding: 0.25rem 0.4rem;
+        font-size: 0.8rem;
+    }
+    
+    .table-responsive {
+        font-size: 0.9rem;
+    }
+}
+
+/* Utility classes */
+.shadow-soft {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08) !important;
+}
+
+.shadow-medium {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Print styles */
+@media print {
+    .navbar, .footer, .btn, .filter-section {
+        display: none !important;
+    }
+    
+    .card {
+        border: 1px solid #ddd !important;
+        box-shadow: none !important;
+    }
+    
+    .header-gradient {
+        background: var(--primary-blue) !important;
+        -webkit-print-color-adjust: exact;
+    }
+}
