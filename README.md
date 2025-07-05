@@ -2,13 +2,14 @@
 
 Sistema web para gestión de **Servicio Social** y **Residencias Profesionales** del Instituto Tecnológico de Cuautla (TecNM).
 
-⚡ **PROYECTO LISTO PARA USAR EN CUALQUIER MÁQUINA - MISMOS DATOS Y CONFIGURACIÓN**
+
+By: Daniel Martinez :D
 
 ---
 
 ## 🚀 USO SÚPER FÁCIL
 
-### 🟢 **YA TIENES EL PROYECTO?** (Primera vez en nueva máquina)
+### 🟢 **PRIMERA VEZ EN NUEVA MAQUINA**
 ```
 1. Doble clic en: PRIMERA_VEZ.cmd
 2. Espera que termine (instala dependencias)
@@ -110,6 +111,11 @@ Doble clic en: PRIMERA_VEZ.cmd
 Instituto Tecnológico de Cuautla (TecNM)  
 Email: contacto@cuautla.tecnm.mx  
 Web: https://cuautla.tecnm.mx
+
+Daniel Martínez  - Full Stack Developer  
+📞 +52 735 274 5805         
+✉️ danielmartinez_24@outlook.com
+
 ✅ **Diseño responsive** Bootstrap 5  
 ✅ **Colores institucionales** TecNM  
 ✅ **Sistema de postulaciones** sin fricción  
@@ -180,4 +186,4 @@ proyecto/
 
 ---
 
-**🎓 Desarrollado para el Instituto Tecnológico de Cuautla (TecNM) 🎓**
+**🎓 Desarrollado por Daniel Martínez para el Instituto Tecnológico de Cuautla (TecNM) ;)🎓**
